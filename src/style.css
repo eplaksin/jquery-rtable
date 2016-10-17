@@ -1,0 +1,46 @@
+.rtable {
+  width: 0;
+  max-width: none;
+  table-layout: fixed;
+}
+
+.rtable th {
+  padding: 0;
+}
+
+.rtable td {
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rtable .rtable-th {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rtable .rtable-th-content {
+  margin: 0 10px 0 5px;
+}
+
+.rtable .rtable-th-resize {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: #eee;
+  display: none;
+}
+
+.rtable .rtable-th-resize {
+  background: #08c;
+  cursor: e-resize;
+}
+
+.rtable .rtable-th:hover .rtable-th-resize {
+  display: block;
+}

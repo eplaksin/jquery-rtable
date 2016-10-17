@@ -1,0 +1,30 @@
+{
+  "name": "jquery-rtable",
+  "version": "1.0.0",
+  "description": "jQuery rTable is a jQuery plugin which allows you to make your table's columns resizable",
+  "keywords": [
+    "jquery",
+    "table",
+    "resizable"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.6"
+  },
+  "author": "eplaksin",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

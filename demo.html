@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>rTable Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/jquery.rtable.min.css">
+    <style>
+      :root {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        line-height:1.5;
+        font-weight: normal;
+        color: #333;
+        background-color: white;
+      }
+      #wrapper {
+        width:800px;
+        margin:0 auto;
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      table th,
+      table td {
+        border: 1px solid #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>jQuery rTable Demo</h1>
+      <p>jQuery rTable is a jQuery plugin which allows you to make your table's columns resizable.</p>
+      <table id="demotable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>City</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>James Porter</td>
+            <td>China</td>
+            <td>Bilian</td>
+            <td>jporter0@imdb.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Annie Hicks</td>
+            <td>Philippines</td>
+            <td>Lunec</td>
+            <td>ahicks1@shinystat.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mary James</td>
+            <td>United States</td>
+            <td>Colorado Springs</td>
+            <td>mjames2@hp.com</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>David Burke</td>
+            <td>Peru</td>
+            <td>Tocota</td>
+            <td>dburke3@acquirethisname.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="dist/jquery.rtable.min.js"></script>
+    <script>
+      $('#demotable').rtable();
+    </script>
+  </body>
+</html>
