@@ -1,14 +1,15 @@
 ;(function($){
   $.fn.rtable = function(options){
-    var options = $.extend({
+    options = $.extend({
       minWidth: 5
     }, options);
 
     return this.each(function(){
       var $table = $(this);
       var $colgroup = $table.find('colgroup').length ? $table.find('colgroup') : $('<colgroup></colgroup>').prependTo($table);
-      var colsHTML = '';
 
+      // set current width to <col>-s
+      var colsHTML = '';
       $table.find('thead th').each(function(){
         var $th = $(this);
         var width = $th.data('rtable-width') || $th.width() + 15;
@@ -24,7 +25,6 @@
 
         colsHTML += '<col width="' + width + '">';
       });
-
       $colgroup.html(colsHTML);
 
       var $resizableTh, startX, startWidth;
@@ -48,12 +48,12 @@
         $colgroup.find('col').eq($resizableTh.index()).attr('width', newWidth);
       }
 
-      function dragStop(event) {
+      function dragStop() {
         $(document).off('mousemove', dragMove);
         $(document).off('mouseup', dragStop);
       }
 
       $table.addClass('rtable');
     });
-  }
+  };
 }(jQuery));
