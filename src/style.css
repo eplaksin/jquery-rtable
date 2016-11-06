@@ -19,28 +19,19 @@
   position: relative;
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 .rtable .rtable-th-content {
-  margin: 0 10px 0 5px;
+  margin: 0 5px;
+  overflow: hidden;
 }
 
 .rtable .rtable-th-resize {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -3px;
   width: 5px;
   height: 100%;
-  background: #eee;
-  display: none;
-}
-
-.rtable .rtable-th-resize {
-  background: #08c;
   cursor: e-resize;
-}
-
-.rtable .rtable-th:hover .rtable-th-resize {
-  display: block;
+  z-index: 1;
 }
